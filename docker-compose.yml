@@ -1,0 +1,14 @@
+version: "3.2"
+services:
+  php7:
+    build: './docker/php7/'
+    volumes:
+      - .:/usr/src/citypantry-test
+    working_dir: /usr/src/citypantry-test
+
+  composer:
+    build: './docker/php7/'
+    volumes:
+      - .:/usr/src/citypantry-test
+    working_dir: /usr/src/citypantry-test
+    command: composer install

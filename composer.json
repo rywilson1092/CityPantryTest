@@ -1,0 +1,28 @@
+{
+    "name": "citypantry-test",
+    "homepage": "https://github.com/rywilson1092/citypantry-test",
+    "description": "The goal of this test is take in parameters from command line and return available items with allergens.",
+    "minimum-stability": "stable",
+    "license": "proprietary",
+    "authors": [
+      {
+        "name": "Ryan Wilson",
+        "email": "ryanwilsondeveloper7@gmail.com"
+      }
+    ],
+    "require": {
+      "php": ">=7.0",
+      "phpunit/phpunit": ">=6.5"
+    },
+    "autoload": {
+      "psr-4": {
+          "CityPantry\\": "src/"
+      }
+    },
+    "autoload-dev": {
+      "psr-4": {
+          "CityPantry\\": "src/",
+          "CityPantryTest\\": "tests/"
+      }
+    }
+  }
