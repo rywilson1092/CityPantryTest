@@ -18,14 +18,6 @@ class QueryItemsTest extends TestCase
     private $testItemsCollection;
     private $testDate;
 
-    /**
-     * This fixture is used to setup the object that are used in the unit tests. We will test with an investor starting with 0
-     *
-     * @method void setUp()
-     * @access protected
-     * @return void
-     */
-
     protected function setUp(): void
     {
         $this->testVendorsCollection = $this->createMock( VendorsCollectionInterface::class );
@@ -33,26 +25,10 @@ class QueryItemsTest extends TestCase
         $this->queryItems = new QueryItems( $this->testDate , self::TEST_LOCATION , self::TEST_COVERS, new DateTime() );
     }
 
-    /**
-     * We will test here that the item class can construct
-     *
-     * @method void testVendorCanConstruct()
-     * @access public
-     * @return void
-     */
-
     public function testQueryItemsCanConstruct() : void
     {
         $this->assertInstanceOf(QueryItems::class, $this->queryItems);
     }
-
-    /**
-     * We will test here that we can get back the same array that was passed through.
-     *
-     * @method void testCanGetName()
-     * @access public
-     * @return void
-     */
 
     public function testCanGetItemsCollection() : void
     {

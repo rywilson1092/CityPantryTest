@@ -15,14 +15,6 @@ class ItemsCollectionsTest extends TestCase
     
     CONST NUMBER_OF_ITEM_MOCKS = 5;
 
-    /**
-     * This fixture is used to setup the object that are used in the unit tests. We will test with an investor starting with 0
-     *
-     * @method void setUp()
-     * @access protected
-     * @return void
-     */
-
     protected function setUp(): void
     {
         
@@ -33,26 +25,10 @@ class ItemsCollectionsTest extends TestCase
         $this->itemsCollection = new ItemsCollection( ...$this->itemMocksArray );
     }
 
-    /**
-     * We will test here that the items collection class can construct
-     *
-     * @method void testItemsCollectionCanConstruct()
-     * @access public
-     * @return void
-     */
-
     public function testItemsCollectionCanConstruct() : void
     {
         $this->assertInstanceOf('CityPantry\Collections\ItemsCollection', $this->itemsCollection);
     }
-
-    /**
-     * We will test here that we can get back the same array that was passed through.
-     *
-     * @method void testCanGetItemsFromCollection()
-     * @access public
-     * @return void
-     */
 
     public function testCanGetItemsFromCollection() : void
     {

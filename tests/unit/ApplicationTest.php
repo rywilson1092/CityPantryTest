@@ -19,14 +19,6 @@ class ApplicationTest extends TestCase
     const TEST_LOCATION = "";
     const TEST_COVERS = 10;
 
-    /**
-     * This fixture is used to setup the object that are used in the unit tests. We will test with an investor starting with 0
-     *
-     * @method void setUp()
-     * @access protected
-     * @return void
-     */
-
     protected function setUp(): void
     {
         $this->vendorReaderMock = $this->createMock( VendorReaderInterface::class);
@@ -34,14 +26,6 @@ class ApplicationTest extends TestCase
 
         $this->application = new Application( $this->vendorReaderMock , $this->queryItemsMock);
     }
-
-    /**
-     * We will test here that the item class can construct
-     *
-     * @method void testItemCanConstruct()
-     * @access public
-     * @return void
-     */
 
     public function testItemCanConstruct() : void
     {
