@@ -5,8 +5,6 @@ For the person looking at test. Best place to start is the scenario file in /tes
 You will see the objects interacting in flow as described in the tech test.
 You can run this project all through docker. It will automatically take care of installing phpunit and composer.
 
-I unsure if their needed to be an api layer but I just understood this as a way of showing what I know in OOP PHP7.
-
 # To serve this project with docker in bash type:
 sudo docker-compose build
 sudo docker-compose up
