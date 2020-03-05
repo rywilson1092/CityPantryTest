@@ -21,7 +21,6 @@ final class QueryItems implements QueryItemsInterface
     private $currentDateTime;
 
     public function __construct( DateTime $requestedDateTime , string $locationPostCode , int $covers , DateTime $currentDateTime ){
-        $this->items = $items;
         $this->requestedDateTime = $requestedDateTime;
         $this->locationPostCode = $locationPostCode;
         $this->covers = $covers;
